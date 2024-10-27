@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --hover-effect: #dbdbdb; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+/* Header --> Nav bar */
+#navigation{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    margin: 0;
+    gap: 32px;
+}
+
+/* Left Section */
+#left-nav{
+    padding: 0 0 0 20px;
+    width: 169px;
+    height: 56px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bars{
+    margin: 0;
+    padding: 8px 8px 5px 8px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    transform: translateY(-1px);
+    transition: cursor 0.3s ease;
+}
+.bars-img{
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+.bars:hover{
+    cursor: pointer;
+    background-color: var(--hover-effect);
+}
+.logo{
+    padding: 17px 0 18px 16px;
+    margin: 0;
+    width: auto;
+    height: 56px;
+}
+.logo-img{
+    width: 90px;
+    height: 20px;
+}
+
+
+/* Central Section */
+#center-nav{
+    padding: 6px 0 0 206px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 32px;
+}
+.search-input{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    margin: 0;
+}
+form{
+    width: 100%;
+    max-width: 536px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    width: 536px;
+    height: 40px;
+    padding: 15px;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #ccc;
+    border-radius: 50px 0 0 50px;
+    box-shadow: inset 0 1px 2px #eee;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 0 50px 50px 0;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #f8f8f8;
+    transition: cursor 0.3s ease;
+}
+.search-img{
+    width: 24px;
+    height: 24px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+}
+
+.mic{
+    background-color: rgba(219, 219, 219, 0.5);
+    margin: 4px 0 0 16px;
+    padding: 8px 8px 5px 8px;
+    border-radius: 50px;
+    transition: cursor 0.3s ease;
+    }
+.mic-icon{
+    width: 24px;
+    height: 24px;
+        }
+.mic:hover{
+    cursor: pointer;
+    background-color: rgba(219, 219, 219, 1);
+}
+
+
+/* Right Section */
+#right-nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+    padding: 8px 0 0 0;
+}
+.add-video{
+    margin: 2px 0 0 225px;
+}
+.add-video-icon{
+    width: 24px;
+    height: 24px;
+}
+.notification{
+    margin: 0;
+    margin-top: 2px;
+}
+.bell-icon{
+    width: 22px;
+    height: 22px;
+}
+.avatar{
+    margin: 0;
+    margin-top: 4px;
+}
+.avatar-img{
+    width: 32px;
+    height: 32px;
+}
+
+/* Hero Section */
+#hero-sec{
+    display: flex;
+    gap: 30px;
+    
+}
+#left-sec{
+    padding: 20px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    text-align: center;
+    gap: 30px;
+    font-size: 10px;
+}
+.home-icon, .shorts-icon, .subscription-icon, .library-icon{
+    margin: 0 0 6px 0;
+    width: 22px;
+    height: 22px;
+}
+#right-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.tags{
+    padding: 15px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.tag-dark, .tag-light{
+    padding: 6px 12px ;
+    background-color: #eee;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: cursor 0.3s ease;
+}
+.tag-dark:hover, .tag-light:hover{
+    cursor: pointer;
+}
+.tag-dark{
+    background-color: #0f0f0f;
+    color: #FFF;
+}
+
+
+
+.des{
+    padding: 5px 0 0 2px;
+    display: flex;
+    gap: 10px;
+}
+.txt{
+    padding-left: 6px;
+}
+.txt h4{
+    font-size: 17px;
+    font-weight: 450;
+}
+.txt p{
+    padding: 0;
+    font-size: 14px;
+    color: #606060;
+}
+.sec-a{
+    margin: -20px 0 0 0;
+    display: flex;
+    gap: 2px;
+}
+.imga, .imgb, .imgc, .imgd{
+    width: 333.31px;
+    height: 187.49;
+    border-radius: 15px;
+}
+
+
+.sec-b{
+    margin: 25px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+.imge, .imgf, .imgg, .imgh{
+    width: 333.31px;
+    height: 187.49;
+    border-radius: 15px;
+}
